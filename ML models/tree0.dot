@@ -1,0 +1,25 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname=helvetica] ;
+edge [fontname=helvetica] ;
+0 [label="Defect index <= 0.83\ngini = 0.8\nsamples = 546\nvalue = [212, 143, 180, 162, 155]\nclass = normal seam", fillcolor="#e581390c"] ;
+1 [label="Peak valley index <= -0.71\ngini = 0.75\nsamples = 396\nvalue = [1, 143, 180, 162, 137]\nclass = undercut", fillcolor="#39e5c50a"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="gini = 0.0\nsamples = 120\nvalue = [0, 0, 180, 0, 0]\nclass = undercut", fillcolor="#39e5c5ff"] ;
+1 -> 2 ;
+3 [label="Standard deviation <= 1.39\ngini = 0.67\nsamples = 276\nvalue = [1, 143, 0, 162, 137]\nclass = pore", fillcolor="#3c39e510"] ;
+1 -> 3 ;
+4 [label="Number of profile points <= 0.4\ngini = 0.5\nsamples = 191\nvalue = [1, 143, 0, 162, 1]\nclass = pore", fillcolor="#3c39e51e"] ;
+3 -> 4 ;
+5 [label="gini = 0.06\nsamples = 95\nvalue = [0, 4, 0, 147, 1]\nclass = pore", fillcolor="#3c39e5f6"] ;
+4 -> 5 ;
+6 [label="gini = 0.19\nsamples = 96\nvalue = [1, 139, 0, 15, 0]\nclass = dent", fillcolor="#7be539e2"] ;
+4 -> 6 ;
+7 [label="gini = 0.0\nsamples = 85\nvalue = [0, 0, 0, 0, 136]\nclass = burn through", fillcolor="#e539c0ff"] ;
+3 -> 7 ;
+8 [label="Number of profile points <= -1.68\ngini = 0.14\nsamples = 150\nvalue = [211, 0, 0, 0, 18]\nclass = normal seam", fillcolor="#e58139e9"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label="gini = 0.0\nsamples = 11\nvalue = [0, 0, 0, 0, 18]\nclass = burn through", fillcolor="#e539c0ff"] ;
+8 -> 9 ;
+10 [label="gini = 0.0\nsamples = 139\nvalue = [211, 0, 0, 0, 0]\nclass = normal seam", fillcolor="#e58139ff"] ;
+8 -> 10 ;
+}

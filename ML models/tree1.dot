@@ -1,0 +1,33 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname=helvetica] ;
+edge [fontname=helvetica] ;
+0 [label="Peak valley index <= -0.71\ngini = 0.8\nsamples = 543\nvalue = [188, 152, 189, 188, 135]\nclass = undercut", fillcolor="#39e5c500"] ;
+1 [label="gini = 0.0\nsamples = 117\nvalue = [0, 0, 189, 0, 0]\nclass = undercut", fillcolor="#39e5c5ff"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="Defects height <= 0.23\ngini = 0.75\nsamples = 426\nvalue = [188, 152, 0, 188, 135]\nclass = normal seam", fillcolor="#e5813900"] ;
+0 -> 2 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+3 [label="Defects width <= -0.41\ngini = 0.58\nsamples = 226\nvalue = [0, 38, 0, 187, 128]\nclass = pore", fillcolor="#3c39e543"] ;
+2 -> 3 ;
+4 [label="Number of profile points <= 0.47\ngini = 0.27\nsamples = 140\nvalue = [0, 35, 0, 187, 0]\nclass = pore", fillcolor="#3c39e5cf"] ;
+3 -> 4 ;
+5 [label="gini = 0.02\nsamples = 105\nvalue = [0, 2, 0, 171, 0]\nclass = pore", fillcolor="#3c39e5fc"] ;
+4 -> 5 ;
+6 [label="gini = 0.44\nsamples = 35\nvalue = [0, 33, 0, 16, 0]\nclass = dent", fillcolor="#7be53983"] ;
+4 -> 6 ;
+7 [label="Defects width <= -0.26\ngini = 0.04\nsamples = 86\nvalue = [0, 3, 0, 0, 128]\nclass = burn through", fillcolor="#e539c0f9"] ;
+3 -> 7 ;
+8 [label="gini = 0.38\nsamples = 3\nvalue = [0, 3, 0, 0, 1]\nclass = dent", fillcolor="#7be539aa"] ;
+7 -> 8 ;
+9 [label="gini = 0.0\nsamples = 83\nvalue = [0, 0, 0, 0, 127]\nclass = burn through", fillcolor="#e539c0ff"] ;
+7 -> 9 ;
+10 [label="Defects width <= 0.95\ngini = 0.5\nsamples = 200\nvalue = [188, 114, 0, 1, 7]\nclass = normal seam", fillcolor="#e5813960"] ;
+2 -> 10 ;
+11 [label="Defects height <= 0.65\ngini = 0.12\nsamples = 75\nvalue = [0, 114, 0, 1, 7]\nclass = dent", fillcolor="#7be539ed"] ;
+10 -> 11 ;
+12 [label="gini = 0.48\nsamples = 15\nvalue = [0, 15, 0, 1, 7]\nclass = dent", fillcolor="#7be53980"] ;
+11 -> 12 ;
+13 [label="gini = 0.0\nsamples = 60\nvalue = [0, 99, 0, 0, 0]\nclass = dent", fillcolor="#7be539ff"] ;
+11 -> 13 ;
+14 [label="gini = 0.0\nsamples = 125\nvalue = [188, 0, 0, 0, 0]\nclass = normal seam", fillcolor="#e58139ff"] ;
+10 -> 14 ;
+}
